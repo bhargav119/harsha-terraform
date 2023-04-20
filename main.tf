@@ -9,6 +9,7 @@ terraform {
       bucket = "terra-bhargav"
       key    = "devopsb24restore.tfstate"
       region = "us-east-1"
+      dynamodb_table = "devopsb24-dynamodb-state-locking"     #name should match the name in dynamodb.tf
     }
     
 }
